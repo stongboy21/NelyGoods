@@ -1,0 +1,180 @@
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+}
+
+/* Header stylisé avec un fond dégradé */
+header {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 2.2em; /* Réduction de la taille du titre */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1em; /* Réduction de la taille de la description */
+    opacity: 0.85;
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 900px;
+    margin: 120px auto 40px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out forwards;
+}
+
+/* Animation de fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Section des termes */
+.terms-section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.6em; /* Réduction de la taille des sous-titres */
+    color: #007bff;
+    margin-bottom: 10px;
+    border-left: 5px solid #007bff;
+    padding-left: 10px;
+}
+
+/* Style des paragraphes */
+p {
+    font-size: 1em; /* Taille de texte réduite pour les paragraphes */
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Liste des termes */
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 1em; /* Taille de texte réduite pour les éléments de la liste */
+    margin-bottom: 10px;
+}
+
+/* Date de mise à jour */
+.update-date {
+    font-size: 0.9em; /* Réduction de la taille de la date */
+    font-style: italic;
+    color: #777;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #f1f1f1;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 0 -4px 10px #505264;
+}
+
+/* Adaptation mobile */
+@media (max-width: 768px) {
+    header {
+        padding: 40px 10px;
+    }
+
+    header h1 {
+        font-size: 1.8em; /* Réduction de la taille du titre sur mobile */
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .terms-section {
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 1.4em; /* Réduction de la taille des sous-titres sur mobile */
+    }
+
+    p, ul li {
+        font-size: 0.95em; /* Taille de texte réduite sur mobile */
+    }
+}
+/* Section des liens sociaux */
+.social-links {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.social-links h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Icônes des réseaux sociaux */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.social-icons a {
+    font-size: 30px; /* Taille des icônes */
+    color: #007bff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1); /* Effet de survol */
+    color: #0056b3;
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
